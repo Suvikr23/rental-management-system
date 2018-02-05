@@ -1,0 +1,10 @@
+<div class="container">
+    <div *ngIf="subcatagories" class="row">
+      <div class="col-md-12 h6 pt-3 pb-3">Equipment Catalogue</div>
+      <div *ngFor="let subcatagory of subcatagories" class="col-md-3">
+        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+          <img class="card-img-top" src="../../assets/{{subcatagory.image}}" alt="Card image cap">
+          <h6 class="card-title center-align">{{subcatagory.name}}</h6>
+        </div>
+      </div>
+    </div>
